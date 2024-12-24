@@ -25,7 +25,7 @@ Type: Block Chain
 
 ---
 
-![스테이킹 프로그램 기본 구조]()
+#### 스테이킹 프로그램 기본 구조
 <img width="898" alt="%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-23_10 17 35" src="https://github.com/user-attachments/assets/b0535185-6d6e-45e3-aa39-bdd48d71f029" />
 
 스테이킹 프로그램 기본 구조
@@ -51,20 +51,20 @@ Type: Block Chain
     
 4. 민팅을 통해 유저가 토큰을 보유했다면 Stake Info PDA로 부터 가져온 스테이킹 상태를 보여준다.
 5. 스테이킹을 하지 않았다면 스테이킹을 유도하는 ‘Stake’ 버튼을 노출한다.
-    ![스크린샷 2024-08-23 10.39.03.png](https://github.com/user-attachments/assets/db3c5bba-5b3b-42e3-8069-8232a503e758)
-    
-6. 원하는 스테이킹 수량을 입력하고 스테이킹 버튼을 클릭 시 연동된 플랫폼의 트랜잭션 사인 프로세스가 진행되며 확인 후 스테이킹이 진행된다.
-    ![스크린샷 2024-08-23 10.40.49.png](https://github.com/user-attachments/assets/7da20063-5f73-4837-9779-a0f2cfdf7d23)
 
-    ![스크린샷 2024-08-23 10.40.49.png](Solana%20Staking%2053f6da6583754cbd967adf13b784ae78/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-23_10.40.49.png)
+   ![스크린샷 2024-08-23 10.39.03.png](https://github.com/user-attachments/assets/db3c5bba-5b3b-42e3-8069-8232a503e758)
     
-7. 스테이킹을 진행한 유저는 Stake Info PDA와 User Stake PAD로 부터 정보를 가져와 스테이킹 진행 상테를 확인할 수 있다.
+7. 원하는 스테이킹 수량을 입력하고 스테이킹 버튼을 클릭 시 연동된 플랫폼의 트랜잭션 사인 프로세스가 진행되며 확인 후 스테이킹이 진행된다.
+
+   ![스크린샷 2024-08-23 10.40.49.png](https://github.com/user-attachments/assets/7da20063-5f73-4837-9779-a0f2cfdf7d23)
+    
+9. 스테이킹을 진행한 유저는 Stake Info PDA와 User Stake PAD로 부터 정보를 가져와 스테이킹 진행 상테를 확인할 수 있다.
     1. Stake Info에서는 상태와 시간을
     2. User Stake에서는 스테이킹 수량을
-        ![스크린샷 2024-08-23 10.41.38.png](https://github.com/user-attachments/assets/c409dae3-c25a-4a8a-b16d-719d0d9a72b2)
+  ![스크린샷 2024-08-23 10.41.38.png](https://github.com/user-attachments/assets/c409dae3-c25a-4a8a-b16d-719d0d9a72b2)
         
-8. 언 스테이킹을 원하는 유저는 ‘Unstake’ 버튼을 통해 트랜잭션을 만들 수 있다.
-9. 확인 후 이전(4번)과 같은 상태로 변경된다.
+10. 언 스테이킹을 원하는 유저는 ‘Unstake’ 버튼을 통해 트랜잭션을 만들 수 있다.
+11. 확인 후 이전(4번)과 같은 상태로 변경된다.
 
 ### Anchor 로직
 
